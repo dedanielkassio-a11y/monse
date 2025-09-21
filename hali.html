@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Para Hali</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="hali.css">
+</head>
+<body>
+  <div class="container">
+    <div class="cat-name" id="catName">malbavisco</div>
+    <img id="catImage" class="catImage" src="img/gatito.png" alt="gatito">
+    <div class="dialog" id="dialog">¡wuaaau que linda eres!! ¿Cómo se llama tu nombre?</div>
+    
+    <input type="text" id="inputBox" placeholder="Escribe tu nombre..." />
+    <button class="btn" id="respondBtn" onclick="nextStep()">Responder</button>
+  </div>
+
+  <!-- Contenedor para botones dinámicos -->
+  <div id="optionsContainer"></div>
+
+  <!-- Panel de carta -->
+  <div id="letterPanel">
+    <div id="letterBox">
+      <div id="letterContent"></div>
+      <button class="btn closeBtn" id="closeLetterBtn">Cerrar carta</button>
+    </div>
+  </div>
+
+  <!-- Botón Atrás -->
+  <button class="btn backBtn" id="backBtn">Atrás</button>
+
+  <script src="hali.js"></script>
+</body>
+</html>
